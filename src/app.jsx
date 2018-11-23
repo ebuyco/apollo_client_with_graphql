@@ -1,50 +1,30 @@
 import React, { Component } from 'react';
-import ApolloCLient from 'apollo-boost';
-import { ApolloProvider, Query } from 'react-apollo';
-import gql from 'graphql-tag';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Post from './Posts/Post';
+import Posts from './Posts/Posts';
 
-
-const client = new ApolloCLient({
+const client = new ApolloClient({
     uri: ''
-    
-});
+})
 
-const POSTS_QUERY = gql `
-    query allPosts{
-        posts {
-            id
-            title
-            body
-    }
-}
-`;
-
-// client.query({
-//     query: POSTS_QUERY
-// }).then(res => console.log(res));
-
-class App extends Component {
-    
-
+class App extends Component{
     render(){
         return(
             <ApolloProvider client={client}>
-            <div>
-                <div>
-                  <Query query={POSTS_QUERY}>
-                        {({loading, data}) =>{
-                            if(loading) return 'Loading...';
-                            const { posts } = data;
-                           return posts.map(post => <h1>{post.title}</h1>)
-                        }}
-                   </Query> 
-                </div>
-            </div>
+                <Router>
+                    <div>
+                        <Switch>
+                          <Route exact path="/" component={Posts} />
+                          <Route path="/post/:id" component={Post} />
+                        </Switch>
+                    </div>    
+               </Router>
             </ApolloProvider>
+           
         )
     }
 }
-
-
 
 export default App;
