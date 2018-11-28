@@ -11,7 +11,7 @@ export default class Post extends Component{
           <Query
            query={POST_QUERY}
            variables={{id: match.params.id}}>
-             {({data, loading}) => {
+             {({ data, loading}) => {
                  if ( loading ) return 'loading...';
                  const { post } = data;
                  return (

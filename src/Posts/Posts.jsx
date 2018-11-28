@@ -8,7 +8,9 @@ import { Link } from 'react-router-dom';
 export default class Posts extends Component{
     render(){
         return(
-            <ul>
+            <div>
+           <Link className="button" to={'/post/new'}>New Post</Link>   
+         <ul className="posts-listing">
             <Query query={POSTS_QUERY}>
                {({ loading, data }) => {
                 if (loading) return 'Loading...';
@@ -23,6 +25,8 @@ export default class Posts extends Component{
             }}
        </Query> 
        </ul>     
+            </div>
+           
         );
     }
 }

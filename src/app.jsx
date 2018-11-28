@@ -9,7 +9,7 @@ import logo from "./logo.svg";
 import './App.css';
 
 const client = new ApolloClient({
-    uri: ''
+    uri: 'https://api-apeast.graphcms.com/v1/cjoli4udf1o2r01g5j2wdam9s/master'
 })
 
 class App extends Component{
@@ -20,16 +20,17 @@ class App extends Component{
                 <div className="App">
                 <header className="App-header">
                     <Link to="/">
-                      <img src={logo} className="App-logo" alt="logo" />
                       <h1 className="App-title">Graphql is Great</h1>
                     </Link>            
                  </header>
-                 <Link to={'/post/new'}> New Post!</Link>
-                       <Switch>
+                 <main>         
+                      <Switch>
                           <Route exact path="/" component={Posts} />
                           <Route exact path="/post/new" component={NewPost} />
                           <Route path="/post/:id" component={Post} />
                         </Switch>
+                 </main>
+                
                     </div>    
                </Router>
             </ApolloProvider>
