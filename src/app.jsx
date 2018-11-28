@@ -9,7 +9,7 @@ import logo from "./logo.svg";
 import './App.css';
 
 const client = new ApolloClient({
-    uri: 'https://api-apeast.graphcms.com/v1/cjoli4udf1o2r01g5j2wdam9s/master'
+    uri: ''
 })
 
 class App extends Component{
