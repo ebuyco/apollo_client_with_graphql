@@ -9,7 +9,7 @@ export default class NewPost extends Component {
     render(){      
         return(
             <div>
-            <h1>NEW POST</h1>
+            <h1 className="new-post-header">NEW POST</h1>
             <Mutation
             mutation={NEW_POST} >
             {createPost => 

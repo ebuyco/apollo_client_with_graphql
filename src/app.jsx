@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Post from './Posts/Post';
 import Posts from './Posts/Posts';
 import NewPost from './Posts/NewPost';
-import logo from "./logo.svg";
 import './App.css';
 
 const client = new ApolloClient({

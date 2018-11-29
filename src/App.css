@@ -1,7 +1,17 @@
+body{
+  margin: 0;
+}
 
+h1.new-post-header {
+  color:#5362E4;
+  text-align:center;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
 
+}
 .App-header {
-  background-color: #524763;
+  background: linear-gradient(-150deg, #00b89e9c 0%, #0152b5 97%);
   padding: 20px;
   text-align: center;
 }
@@ -19,7 +29,7 @@
 
 .button {
   text-decoration: none;
-  background: #524763;
+  background: #5362E4;
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 2rem;

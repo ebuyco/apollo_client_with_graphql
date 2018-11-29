@@ -17,10 +17,10 @@ export default class Post extends Component{
                  return (
                      <div>
                      <section>
-                         <h1>{post.title}</h1>
+                         <h1 className="new-post-header">{post.title}</h1>
                      </section>
                      <section>
-                         <h1>Edit Post</h1>
+                         <h1 className="new-post-header">Edit Post</h1>
                          <UpdatePost post={post}/>
                      </section>
                      </div>
