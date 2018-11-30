@@ -11,7 +11,7 @@ export default class EditMode extends Component {
                       onClick={() => {
                           client.writeData({ data: { isEditMode: !isEditMode} });
                       }}
-                      >Toggle Edit Mode</button>
+                      className="btn-toggle">Toggle Edit Mode</button>
                 )}
                
             </ApolloConsumer>

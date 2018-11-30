@@ -34,14 +34,24 @@ h1.new-post-header {
   padding: 5px 10px;
   border-radius: 2rem;
 }
-
+.btn-toggle{
+  text-decoration: none;
+  background: #4FADF9;
+  color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 1.588rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
 main {
   width: 90%;
   margin: 1rem auto;
 }
 
 .posts-listing {
-  list-style: none;
+  
   padding: 0;
   margin: 2rem auto;
 }
