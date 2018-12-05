@@ -12,7 +12,7 @@ const defaultState = {
 };
 
 const client = new ApolloClient({
-    uri: 'https://api-apeast.graphcms.com/v1/cjoli4udf1o2r01g5j2wdam9s/master',
+    uri: '',
     clientState: {
         defaults: defaultState,
         resolvers: {}
@@ -24,7 +24,6 @@ class App extends Component{
         return(
             <ApolloProvider client={client}>
                 <Router>
-                <div className="App">
                 <header className="App-header">
                     <Link to='/'>
                       <h1 className="App-title">Graphql is Great</h1>
