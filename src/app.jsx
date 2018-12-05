@@ -26,7 +26,7 @@ class App extends Component{
                 <Router>
                 <div className="App">
                 <header className="App-header">
-                    <Link to="/">
+                    <Link to='/'>
                       <h1 className="App-title">Graphql is Great</h1>
                     </Link>            
                  </header>
