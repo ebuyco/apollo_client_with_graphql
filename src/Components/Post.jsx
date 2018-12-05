@@ -10,7 +10,9 @@ export default class Post extends Component{
         return(
           <Query
            query={POST_QUERY}
-           variables={{id: match.params.id}}>
+           variables={{
+               id: match.params.id
+               }}>
              {({ data, loading}) => {
                  if ( loading ) return 'loading...';
                  const { post, isEditMode } = data;
@@ -53,17 +55,17 @@ export default class Post extends Component{
                                                     post: data.post
 
                                                 }
-                                            })
+                                            });
                                 }}
                             >
                             {updatePost => (
-                               <input type="checkbox" 
-                               checked={post.checked}
-                               onChange={ updatePost } />
-                            )}
-                            <input type="checkbox" checked={post.checked} />
-                            </Mutation>
-                          
+                               <input 
+                               type="checkbox" 
+                               checked={post.check}
+                               onChange={updatePost}
+                                />
+                            )}   
+                            </Mutation>                    
                          </section>
                          )}               
                      </div>                     
@@ -88,11 +90,8 @@ const POST_QUERY = gql `
 `;
 
 const UPDATE_POST = gql`
-    mutation updatePost($check: Boolean , $id: ID!){
-        updatePost(
-            where: { id: $id }, data: { check: $check }
-          
-        ) {
+    mutation updatePost($check: Boolean , $id: ID!) {
+        updatePost(where: { id: $id }, data: { check: $check }) {
             check
         }
     }
