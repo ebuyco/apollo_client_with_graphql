@@ -21,7 +21,7 @@ persistCache({
 }).then(() => {
     const client = new ApolloClient({
         cache,
-        uri: '',
+        uri: 'https://api-apeast.graphcms.com/v1/cjoli4udf1o2r01g5j2wdam9s/master',
         clientState: {
             defaults: defaultState,
             resolvers: {}
