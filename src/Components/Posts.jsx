@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Query } from 'react-apollo';
 import { Link } from 'react-router-dom';
-
-import POST_QUERY from './Posts.graphql';
+import POSTS_QUERY from '../queries/Posts.graphql';
 
 export default class Posts extends Component{
     render(){

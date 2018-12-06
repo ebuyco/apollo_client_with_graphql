@@ -1,0 +1,12 @@
+
+    query post ($id: ID!) {
+        post( where: { id: $id }){
+        id
+        title
+        body
+        check
+        }
+        isEditMode @client
+    }
+
+

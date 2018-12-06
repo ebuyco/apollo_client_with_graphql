@@ -1,0 +1,5 @@
+ mutation updatePost($check: Boolean , $id: ID!) {
+        updatePost(where: { id: $id }, data: { check: $check }) {
+            check
+        }
+    }
