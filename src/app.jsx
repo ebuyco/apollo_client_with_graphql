@@ -5,14 +5,9 @@ import Posts from './Components/Posts';
 import NewPost from './Components/NewPost';
 import './App.css';
 
-
-
-
-
 class App extends Component{
     render(){
-        return(
-        
+        return(  
                 <Router>
                 <div className="App">
                 <header className="App-header">

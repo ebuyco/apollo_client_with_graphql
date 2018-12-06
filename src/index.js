@@ -12,7 +12,6 @@ const defaultState = {
 };
 
 
-
 const cache = new InMemoryCache();
 
 persistCache({
