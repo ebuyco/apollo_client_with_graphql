@@ -1,0 +1,11 @@
+fragment Posts on Page {
+  type
+  name
+   Posts {
+    name
+  }
+ Body
+  Title {
+    ...PostsFragment
+  }
+}
