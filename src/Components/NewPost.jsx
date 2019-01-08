@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
-import gql from 'graphql-tag';
 import PostForm from './PostForm';
-
+import NEW_POST from '../queries/Post.graphql';
 export default class NewPost extends Component {
   render() {
     return (
@@ -19,16 +18,3 @@ export default class NewPost extends Component {
   }
 }
 
-const NEW_POST = gql`
-    mutation addPost($title: String!, $body: String!) {
-        createPost(data:{
-            status: PUBLISHED
-            title: $title
-            body: $body
-        }){
-            title
-            body
-            id
-        }
-    }
-`;

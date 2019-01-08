@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Post from './Components/Post';
 import Posts from './Components/Posts';
 import NewPost from './Components/NewPost';
+import { Global } from './UI/Elements';
 import './App.css';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
+          <Global/>
           <header className='App-header'>
             <Link to='/'>
               <h1 className='App-title'>Graphql is Great</h1>
