@@ -3,7 +3,7 @@ import { Query, Mutation } from 'react-apollo';
 // import gql from 'graphql-tag';
 import UpdatePost from './UpdatePost';
 import EditMode from './EditMode';
-import UPDATE_POST from '../queries/Update.graphql';
+import UPDATE_POST from '../mutations/Update.graphql';
 import POST_QUERY from '../queries/Post.graphql';
 
 export default class Post extends Component {
