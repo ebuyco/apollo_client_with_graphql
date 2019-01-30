@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default class PostForm extends Component {
+  /*eslint-disable*/
     static propTypes = {
       onSubmit: PropTypes.func.isRequired,
       onSuccess: PropTypes.func,
       post: PropTypes.object
     }
+     /*eslint-disable*/
 
     static defaultProps = {
       post: {},

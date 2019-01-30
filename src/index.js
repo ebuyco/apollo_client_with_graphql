@@ -6,10 +6,10 @@ import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import App from './App';
 
+
 const defaultState = {
   isEditMode: false
 };
-
 
 const cache = new InMemoryCache();
 

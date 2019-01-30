@@ -43,6 +43,7 @@ export default class Post extends Component {
                         check: !post.check
                       }
                     }}
+                    /*eslint-disable*/
                     update={(cache, { data: { updatePost } }) => {
                       const data = cache.readQuery({
                         query: POST_QUERY,
@@ -60,7 +61,9 @@ export default class Post extends Component {
                         }
                       });
                     }}
+                    /*eslint-disable*/
                   >
+                  
                     {updatePost => (
                       <input
                         type='checkbox'

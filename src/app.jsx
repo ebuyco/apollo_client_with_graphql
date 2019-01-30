@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Post from './Components/Post';
 import Posts from './Components/Posts';
 import NewPost from './Components/NewPost';
-import { Global } from './UI/Elements';
+import Global from './UI/Elements';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <Global/>
+          <Global />
           <header className='App-header'>
             <Link to='/'>
               <h1 className='App-title'>Graphql is Great</h1>
@@ -21,7 +21,7 @@ class App extends Component {
             <Switch>
               <Route exact path='/' component={Posts} />
               <Route exact path='/post/new' component={NewPost} />
-              <Route path='/post/:id' component={Post} />
+              <Route path={'/post/:id'} component={Post} />
             </Switch>
           </main>
 

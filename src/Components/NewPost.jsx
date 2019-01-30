@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
 import PostForm from './PostForm';
 import NEW_POST from '../mutations/New.graphql';
+
 export default class NewPost extends Component {
   render() {
     return (
@@ -17,4 +18,3 @@ export default class NewPost extends Component {
     );
   }
 }
-

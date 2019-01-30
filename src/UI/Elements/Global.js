@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -24,6 +24,6 @@ body {
 }
 
 button {  font-family: 'Montserrat', sans-serif; }
-`
+`;
 
 export default GlobalStyle;
