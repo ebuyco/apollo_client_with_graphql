@@ -61,9 +61,7 @@ export default class Post extends Component {
                         }
                       });
                     }}
-                    /*eslint-disable*/
                   >
-                  
                     {updatePost => (
                       <input
                         type='checkbox'
