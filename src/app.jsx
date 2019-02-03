@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename='/blog/'>
         <div className='App'>
           <Global />
           <header className='App-header'>
